@@ -1,0 +1,31 @@
+{
+    "name": "mhdrefdi-ptr/filament-freeze-action-table",
+    "description": "A Filament package that keeps table action columns fixed (frozen) during horizontal scrolling, ensuring actions remain visible and easily accessible.",
+    "type": "library",
+    "require": {
+        "filament/filament": "^4.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mhdrefdi\\FilamentFreezeActionTable\\": "src/"
+        },
+        "files": [
+            "src/ide-helper.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mhdrefdi\\FilamentFreezeActionTable\\FilamentFreezeActionTableServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Muhammad Refdi Pasaribu",
+            "email": "refdipsb23@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

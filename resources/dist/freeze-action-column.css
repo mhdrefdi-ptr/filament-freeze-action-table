@@ -1,0 +1,47 @@
+.fft-freeze-action-col {
+    position: sticky;
+    right: 0;
+    z-index: var(--fft-z-index-body, 15);
+    background-color: var(--fft-cell-bg, inherit);
+    box-shadow: none;
+}
+
+.fi-ta-table > thead > tr > .fft-freeze-action-col {
+    z-index: var(--fft-z-index-header, 16);
+}
+
+.fft-freeze-action-col.fft-freeze-shadow {
+    box-shadow: var(--fft-shadow-light, -2px 0 4px -2px rgba(0, 0, 0, 0.22));
+}
+
+.dark .fft-freeze-action-col.fft-freeze-shadow {
+    box-shadow: var(--fft-shadow-dark, -2px 0 4px -2px rgba(255, 255, 255, 0.26));
+}
+
+.fi-ta-table > thead > tr > .fft-freeze-action-col {
+    --fft-cell-bg: rgb(249 250 251) !important;
+}
+
+.dark .fi-ta-table > thead > tr > .fft-freeze-action-col {
+    --fft-cell-bg: color-mix(
+        in srgb,
+        var(--fft-table-base-bg, rgb(15 23 42)) var(--fft-dark-hover-base-pct, 95%),
+        rgb(255 255 255) var(--fft-dark-hover-accent-pct, 5%)
+    ) !important;
+}
+
+.fi-ta-table > tbody > tr.fi-clickable:hover > .fft-freeze-action-col,
+.fi-ta-table > tbody > tr.fi-selected > .fft-freeze-action-col,
+.fi-ta-table > tbody > tr.fi-striped > .fft-freeze-action-col {
+    --fft-cell-bg: rgb(249 250 251) !important;
+}
+
+.dark .fi-ta-table > tbody > tr.fi-clickable:hover > .fft-freeze-action-col,
+.dark .fi-ta-table > tbody > tr.fi-selected > .fft-freeze-action-col,
+.dark .fi-ta-table > tbody > tr.fi-striped > .fft-freeze-action-col {
+    --fft-cell-bg: color-mix(
+        in srgb,
+        var(--fft-table-base-bg, rgb(15 23 42)) var(--fft-dark-hover-base-pct, 95%),
+        rgb(255 255 255) var(--fft-dark-hover-accent-pct, 5%)
+    ) !important;
+}
